@@ -1,0 +1,173 @@
+* { margin: 0; }
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.bar {
+  position: absolute;
+}
+
+#blue-bar {
+  position: absolute;
+  top: 0;
+  z-index: 2;
+}
+
+#yellow-bar {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+#blue-bar .bar-horizontal {
+  background: rgb(25, 60, 101);
+  left: 0;
+  top: 80px;
+}
+
+#blue-bar .bar-vertical {
+  background: rgb(25, 60, 101);
+  top: 0;
+  left: 40px;
+}
+
+
+#yellow-bar .bar-horizontal {
+  background: rgb(254, 209, 83);
+  top: 40px;
+}
+
+#yellow-bar .bar-vertical {
+  background: rgb(254, 209, 83);
+  left: 80px;
+  top: 0;
+}
+
+.bar-horizontal {
+  height: 20px;
+  width: 300px;
+}
+
+.bar-vertical {
+  height: 100px;
+  width: 20px;
+}
+
+#nav {
+  width: 960px;
+  margin: 58px auto;
+  position: relative;
+  z-index: 4;
+  font-size: 16px;
+}
+
+#nav li {
+  float: left;
+  margin-right: 20px;
+  list-style: none;
+  text-align: center;
+}
+
+#nav a {
+  display: block;
+  width: 100px;
+  background: rgb(25, 60, 101);
+  padding: 10px;
+  border: 2px solid rgb(25, 60, 101);
+}
+
+#nav a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+#nav a:link,
+#nav a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+#nav a:hover {
+  color: rgb(25, 60, 101);
+  background: white;
+  cursor: pointer;
+}
+
+#container {
+  width: 80%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding-top: 30px;
+  overflow: hidden;
+}
+
+h1, h3, p {
+  color: rgb(25, 60, 101);
+}
+
+h1 {
+  text-decoration: underline;
+}
+
+#container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#container > div {
+  box-sizing: border-box;
+  padding: 5px 25px;
+  float: left;
+  border-right: 1px solid #111;
+  text-align: center;
+}
+
+#container p {
+  margin: 10px 0;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.grid-1 {
+  border: none !important;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  float: none !important;
+}
+
+.grid-gallery {
+  float: none !important;
+  border: none !important;
+  margin: 0 auto;
+}
+
+.grid-3 {
+  width: 33%;
+}
+
+.grid-3:last-of-type {
+  border-right: none;
+}
+
+.gallery-links {
+  overflow: hidden;
+  margin: 20px auto;
+  width: 660px;
+}
+.gallery-links img {
+  display: block;
+  max-width: 150px;
+  float: left;
+  margin-right: 20px;
+}
+
+.gallery-links img:last-of-type {
+  margin-right: 0;
+}
+
+.active-img {
+  margin: 0 auto 30px auto;
+  display: block;
+}
